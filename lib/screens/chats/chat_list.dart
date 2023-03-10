@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class ChatList extends StatefulWidget {
   const ChatList({super.key});
@@ -17,15 +15,15 @@ class _ChatListState extends State<ChatList> {
       itemBuilder: (context, index) => Padding(
         padding: const EdgeInsets.symmetric(vertical: 0),
         child: ListTile(
-          leading: CircleAvatar(
+          leading: const CircleAvatar(
             radius: 25,
           ),
-          title: Text('Hardik Roongta'),
+          title: const Text('Hardik Roongta'),
           isThreeLine: false,
-          subtitle: Text('Where are you?', maxLines: 1,),
+          subtitle: const Text('Where are you?', maxLines: 1,),
           trailing: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
+            children: const [
               Text('19:05', style: TextStyle(fontSize: 12),),
               CircleAvatar(
                 radius: 10,
